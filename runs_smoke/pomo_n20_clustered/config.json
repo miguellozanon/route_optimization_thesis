@@ -1,0 +1,16 @@
+{
+  "n": 20,
+  "dist": "clustered",
+  "epochs": 2,
+  "steps": 20,
+  "batch": 32,
+  "lr": 0.0001,
+  "d": 128,
+  "heads": 8,
+  "layers": 3,
+  "val_size": 32,
+  "seed": 0,
+  "device": "cuda",
+  "out": "runs_smoke",
+  "eval": null
+}

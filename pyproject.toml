@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brlo"
+version = "0.1.0"
+description = "Battery Reverse Logistics Optimization: stochastic network design, exact long-haul dispatch and learned first-mile collection routing for end-of-life EV batteries."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Miguel Lozano Nykolaychuk" }]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",      # scipy.optimize.milp wraps the HiGHS MILP solver (MIT)
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "pyyaml>=6.0",
+    "jinja2>=3.1",
+]
+
+[project.optional-dependencies]
+neural = ["torch>=2.2"]
+app = ["streamlit>=1.35"]
+osrm = ["requests>=2.31"]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

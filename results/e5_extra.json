@@ -1,0 +1,4 @@
+{"first_stage_RP_MEUR": 22.76, "first_stage_EEV_MEUR": 8.46,
+ "untreated_kt_optimistic": {"RP": 2.5, "EEV": 28.1}, "untreated_kt_neutral": {"RP": 0.0, "EEV": 0.0},
+ "EV_design": "Madrid + Bilbao depots; only Leon plant in 2035",
+ "note": "computed with solve_network on default_network(); see run_strategic.py"}

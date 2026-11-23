@@ -1,0 +1,201 @@
+{
+ "legacy1": [
+  [
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "ACC_KRE",
+    "cargo_kg": 18000,
+    "streams": "NMC"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "BEEPL-TERA-REFACT",
+    "cargo_kg": 9000,
+    "streams": "LFP"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "ACC_KRE",
+    "cargo_kg": 7500,
+    "streams": "LIP"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "ACC_MUL",
+    "cargo_kg": 4000,
+    "streams": "NIMH"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "ACC_MUL",
+    "cargo_kg": 2500,
+    "streams": "NICD"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "RECYP",
+    "cargo_kg": 30000,
+    "streams": "PB"
+   }
+  ],
+  [
+   "trip0[MAD/T40/ACC_KRE]: overload 24600 > 24000 kg",
+   "trip0[MAD/T40/ACC_KRE]: 60.0 slots > 33",
+   "trip5[MAD/T40/RECYP]: overload 31530 > 24000 kg",
+   "trip5[MAD/T40/RECYP]: 34.0 slots > 33",
+   "fleet T40: 25.0 vehicle-days > 20"
+  ]
+ ],
+ "legacy2": [
+  [
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "TERA-REFACT-BEEPL-MINURB-SNAM_SQF",
+    "cargo_kg": 18000,
+    "streams": "NMC"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "REFACT-TERA-MINURB",
+    "cargo_kg": 9000,
+    "streams": "LFP"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "MINURB-ACC_MUL",
+    "cargo_kg": 7500,
+    "streams": "LIP"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "RECYP",
+    "cargo_kg": 4000,
+    "streams": "NIMH"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "RECYP",
+    "cargo_kg": 2500,
+    "streams": "NICD"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "RECYP",
+    "cargo_kg": 30000,
+    "streams": "PB"
+   }
+  ],
+  [
+   "trip0[MAD/T40/TERA-REFACT-BEEPL-MINURB-SNAM_SQF]: 5 stops > max_stops",
+   "trip0[MAD/T40/TERA-REFACT-BEEPL-MINURB-SNAM_SQF]: overload 24820 > 24000 kg",
+   "trip0[MAD/T40/TERA-REFACT-BEEPL-MINURB-SNAM_SQF]: 62.0 slots > 33",
+   "trip5[MAD/T40/RECYP]: overload 31530 > 24000 kg",
+   "trip5[MAD/T40/RECYP]: 34.0 slots > 33",
+   "fleet T40: 21.0 vehicle-days > 20",
+   "total capacity MINURB: 14000 > 8000",
+   "total capacity TERA: 6000 > 4000",
+   "total capacity REFACT: 5000 > 4000"
+  ]
+ ],
+ "two_phase": [
+  [
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "SNAM_VIV",
+    "cargo_kg": 11250,
+    "streams": "LIP,NICD,NMC"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "SNAM_VIV",
+    "cargo_kg": 11250,
+    "streams": "LIP,NICD,NMC"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "E19",
+    "stops": "MINURB",
+    "cargo_kg": 4800,
+    "streams": "LIP,NMC"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "RECYP",
+    "cargo_kg": 22655,
+    "streams": "NICD,NIMH,PB"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "RECYP-BEEPL",
+    "cargo_kg": 16045,
+    "streams": "LFP,NIMH,PB"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "R26",
+    "stops": "TERA-REFACT",
+    "cargo_kg": 5000,
+    "streams": "LFP"
+   }
+  ],
+  []
+ ],
+ "best": [
+  [
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "SNAM_VIV",
+    "cargo_kg": 11250,
+    "streams": "LIP,NICD,NMC"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "SNAM_VIV",
+    "cargo_kg": 11250,
+    "streams": "LIP,NICD,NMC"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "RECYP",
+    "cargo_kg": 22550,
+    "streams": "NICD,NIMH,PB"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "RECYP-BEEPL",
+    "cargo_kg": 16150,
+    "streams": "LFP,NICD,PB"
+   },
+   {
+    "depot": "MAD",
+    "vehicle": "T40",
+    "stops": "MINURB-REFACT-TERA",
+    "cargo_kg": 9800,
+    "streams": "LFP,LIP,NMC"
+   }
+  ],
+  []
+ ],
+ "best_source": "full",
+ "best_lb": 11531.798565256795
+}

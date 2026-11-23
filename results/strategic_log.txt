@@ -1,0 +1,244 @@
+{
+ "RP": 61866508.49169858,
+ "EV": 53609684.30450738,
+ "EEV": 65884290.55256151,
+ "WS": 54197574.690172724,
+ "VSS": 4017782.0608629286,
+ "EVPI": 7668933.801525854,
+ "VSS_pct_of_RP": 6.49427640061835,
+ "EVPI_pct_of_RP": 12.395937621976667,
+ "rp_scenario_cost": {
+  "pessimistic": 26525100.572250124,
+  "neutral": 33610887.19592782,
+  "optimistic": 62674279.65198471
+ },
+ "eev_scenario_cost": {
+  "pessimistic": 29720972.585151486,
+  "neutral": 41460294.6459696,
+  "optimistic": 117049240.16110894
+ },
+ "ws_values": {
+  "pessimistic": 36009508.21877913,
+  "neutral": 48795330.30555271,
+  "optimistic": 83190129.93080634
+ }
+}
+{
+ "RP": [
+  {
+   "MAD": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "BCN": [],
+   "VLC": [],
+   "SVQ": [],
+   "BIO": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "ZAZ": [
+    2033,
+    2034,
+    2035
+   ]
+  },
+  {
+   "NEW_LEON": [
+    2035
+   ],
+   "NEW_ZAZ": [
+    2033,
+    2034,
+    2035
+   ],
+   "NEW_SVQ": []
+  }
+ ],
+ "EV": [
+  {
+   "MAD": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "BCN": [],
+   "VLC": [],
+   "SVQ": [],
+   "BIO": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "ZAZ": []
+  },
+  {
+   "NEW_LEON": [
+    2035
+   ],
+   "NEW_ZAZ": [],
+   "NEW_SVQ": []
+  }
+ ],
+ "WS_pessimistic": [
+  {
+   "MAD": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "BCN": [],
+   "VLC": [],
+   "SVQ": [],
+   "BIO": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "ZAZ": []
+  },
+  {
+   "NEW_LEON": [],
+   "NEW_ZAZ": [],
+   "NEW_SVQ": []
+  }
+ ],
+ "WS_neutral": [
+  {
+   "MAD": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "BCN": [],
+   "VLC": [],
+   "SVQ": [],
+   "BIO": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "ZAZ": []
+  },
+  {
+   "NEW_LEON": [],
+   "NEW_ZAZ": [],
+   "NEW_SVQ": []
+  }
+ ],
+ "WS_optimistic": [
+  {
+   "MAD": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "BCN": [],
+   "VLC": [],
+   "SVQ": [],
+   "BIO": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "ZAZ": [
+    2034,
+    2035
+   ]
+  },
+  {
+   "NEW_LEON": [
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "NEW_ZAZ": [
+    2034,
+    2035
+   ],
+   "NEW_SVQ": []
+  }
+ ]
+}
+{'p_optimistic': 0.1, 'plant_cost_mult': 0.75, 'objective': 51817134.43330122, 'first_plant_year': 2034, 'plants': '{"NEW_LEON": [], "NEW_ZAZ": [2034, 2035], "NEW_SVQ": []}'}
+{'p_optimistic': 0.1, 'plant_cost_mult': 1.0, 'objective': 53844878.2963483, 'first_plant_year': None, 'plants': '{"NEW_LEON": [], "NEW_ZAZ": [], "NEW_SVQ": []}'}
+{'p_optimistic': 0.1, 'plant_cost_mult': 1.5, 'objective': 53844878.2963483, 'first_plant_year': None, 'plants': '{"NEW_LEON": [], "NEW_ZAZ": [], "NEW_SVQ": []}'}
+{'p_optimistic': 0.25, 'plant_cost_mult': 0.75, 'objective': 57498863.99823807, 'first_plant_year': 2033, 'plants': '{"NEW_LEON": [2035], "NEW_ZAZ": [2033, 2034, 2035], "NEW_SVQ": []}'}
+{'p_optimistic': 0.25, 'plant_cost_mult': 1.0, 'objective': 61866508.49169858, 'first_plant_year': 2033, 'plants': '{"NEW_LEON": [2035], "NEW_ZAZ": [2033, 2034, 2035], "NEW_SVQ": []}'}
+{'p_optimistic': 0.25, 'plant_cost_mult': 1.5, 'objective': 67260639.65705018, 'first_plant_year': 2034, 'plants': '{"NEW_LEON": [], "NEW_ZAZ": [2034, 2035], "NEW_SVQ": []}'}
+{'p_optimistic': 0.4, 'plant_cost_mult': 0.75, 'objective': 62074302.94426043, 'first_plant_year': 2032, 'plants': '{"NEW_LEON": [2035], "NEW_ZAZ": [2032, 2033, 2034, 2035], "NEW_SVQ": []}'}
+{'p_optimistic': 0.4, 'plant_cost_mult': 1.0, 'objective': 66580306.691291, 'first_plant_year': 2033, 'plants': '{"NEW_LEON": [2035], "NEW_ZAZ": [2033, 2034, 2035], "NEW_SVQ": []}'}
+{'p_optimistic': 0.4, 'plant_cost_mult': 1.5, 'objective': 74993178.19367728, 'first_plant_year': 2034, 'plants': '{"NEW_LEON": [2035], "NEW_ZAZ": [2034, 2035], "NEW_SVQ": []}'}

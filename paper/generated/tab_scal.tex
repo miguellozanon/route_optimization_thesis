@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Random instances (mean over seeds): gap (\%) to the phase-1 lower bound and seconds.}\label{tab:scal}
+\begin{tabular}{rrrrrrrrrrr}\toprule
+$|J|$ & $|O|$ & columns & \multicolumn{2}{c}{Greedy} & \multicolumn{2}{c}{ALNS} & \multicolumn{2}{c}{Two-phase} & \multicolumn{2}{c}{Two-phase+ALNS}\\
+ & & & gap & s & gap & s & gap & s & gap & s\\\midrule
+8 & 1 & 276 & 36.30 & 0 & 4.48 & 60 & 1.28 & 19 & 1.28 & 65\\
+12 & 1 & 895 & 51.86 & 0 & 7.42 & 60 & 1.60 & 13 & 1.60 & 58\\
+12 & 2 & 1,793 & 22.17 & 0 & 15.72 & 60 & 8.12 & 74 & 8.12 & 120\\
+16 & 1 & 2,090 & 31.87 & 0 & 7.68 & 60 & 2.08 & 20 & 2.08 & 65\\
+20 & 2 & 8,110 & 36.64 & 0 & 21.76 & 61 & 94.56 & 149 & 58.88 & 194\\
+\bottomrule\end{tabular}\end{table}

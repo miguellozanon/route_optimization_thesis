@@ -1,0 +1,10 @@
+\begin{table}[t]\centering\small\setlength{\tabcolsep}{4pt}
+\caption{First-mile CVRP, mean tour length on 100 test instances (unit square; gaps relative to CW+LS).}\label{tab:firstmile}
+\begin{tabular}{lrllll}\toprule Distribution & $n$ & Nearest neighbour & Clarke--Wright & CW + local search & POMO ($\times$8 aug.)\\\midrule
+clustered & 20 & 4.426 (+25.4\%) & 3.569 (+1.1\%) & 3.529 (1\,ms) & \todo{GPU run}\\
+clustered & 50 & 7.704 (+24.2\%) & 6.314 (+1.8\%) & 6.204 (4\,ms) & \todo{GPU run}\\
+clustered & 100 & 11.218 (+21.8\%) & 9.357 (+1.6\%) & 9.209 (19\,ms) & \todo{GPU run}\\
+uniform & 20 & 7.933 (+28.0\%) & 6.244 (+0.7\%) & 6.200 (1\,ms) & \todo{GPU run}\\
+uniform & 50 & 13.958 (+31.1\%) & 10.745 (+1.0\%) & 10.643 (5\,ms) & \todo{GPU run}\\
+uniform & 100 & 21.254 (+28.0\%) & 16.760 (+0.9\%) & 16.607 (15\,ms) & \todo{GPU run}\\
+\bottomrule\end{tabular}\end{table}

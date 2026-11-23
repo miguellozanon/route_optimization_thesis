@@ -1,0 +1,65 @@
+===== e1 =====
+                          method     cost  ...  n_violations  seconds
+0  Legacy BC prototype, option 1  16511.0  ...             5      0.0
+1  Legacy BC prototype, option 2  25821.6  ...             9      0.0
+2             Greedy (corrected)  15978.5  ...             0      0.0
+3       ALNS from greedy (120 s)  11984.3  ...             0     19.6
+4     Two-phase MILP (certified)  11538.2  ...             0      8.6
+5              Full MILP (600 s)  11532.9  ...             0    540.7
+
+[6 rows x 9 columns]
+===== e2 =====
+{'instance': 'iberia_base', 'strengthen': False, 'lp_root': 9547.301622784278, 'full_ub': 11562.932370687826, 'full_lb': 11301.360211364645, 'full_s': 120.06692562800026, 'relaxed_containers_opt': 11444.244981200325, 'relaxed_status': 'optimal', 'relaxed_s': 7.803479873000015}
+{'instance': 'iberia_base', 'strengthen': True, 'lp_root': 10880.373280810098, 'full_ub': 11809.409920235941, 'full_lb': 11097.090556300785, 'full_s': 120.0747262079999, 'relaxed_containers_opt': 11444.244981200325, 'relaxed_status': 'optimal', 'relaxed_s': 7.587976669999989}
+{'instance': 'rand_f12_s0', 'strengthen': False, 'lp_root': 6541.050840534324, 'full_ub': 9328.444536011995, 'full_lb': 8378.85713573943, 'full_s': 120.12353124699985, 'relaxed_containers_opt': 8824.578834943775, 'relaxed_status': 'optimal', 'relaxed_s': 7.644118810999771}
+{'instance': 'rand_f12_s0', 'strengthen': True, 'lp_root': 7921.465902081603, 'full_ub': 9474.276472405661, 'full_lb': 8361.908839725738, 'full_s': 120.13802213600002, 'relaxed_containers_opt': 8824.578834943663, 'relaxed_status': 'optimal', 'relaxed_s': 11.769987490999938}
+===== e4 =====
+{'study': 'co2_price', 'value': 0, 'cost_eur': np.float64(11538.170268295358), 'co2_kg': np.float64(4848.025061271136), 'gap_pct': 0.8140397039650042, 'share_spain': np.float64(0.6830985915492956), 'trips_T40': 4, 'trips_E19': 1, 'trips_R26': 1}
+{'study': 'co2_price', 'value': 100, 'cost_eur': np.float64(11538.17026829535), 'co2_kg': np.float64(4848.025061271136), 'gap_pct': 0.7955470360194606, 'share_spain': np.float64(0.6830985915492958), 'trips_T40': 4, 'trips_E19': 1, 'trips_R26': 1}
+{'study': 'co2_price', 'value': 250, 'cost_eur': np.float64(11637.573545587187), 'co2_kg': np.float64(4449.537219429365), 'gap_pct': 1.0389200792965643, 'share_spain': np.float64(0.6830985915492958), 'trips_T40': 4, 'trips_E19': 1, 'trips_R12': 1}
+{'study': 'co2_price', 'value': 500, 'cost_eur': np.float64(11637.573545587284), 'co2_kg': np.float64(4449.537219429365), 'gap_pct': 0.9650546667627763, 'share_spain': np.float64(0.6830985915492959), 'trips_T40': 4, 'trips_E19': 1, 'trips_R12': 1}
+{'study': 'stock_scale', 'value': 0.5, 'cost_eur': np.float64(5420.3016276356875), 'co2_kg': np.float64(1951.787028821535), 'eur_per_t': np.float64(152.68455289114613), 'gap_pct': 0.6391817802941618, 'unshipped_kg': np.float64(3.637978807091713e-12), 'share_spain': np.float64(0.6690140845070421)}
+{'study': 'stock_scale', 'value': 1.0, 'cost_eur': np.float64(11538.170268295358), 'co2_kg': np.float64(4848.025061271136), 'eur_per_t': np.float64(162.50944039852618), 'gap_pct': 0.8140397039650042, 'unshipped_kg': np.float64(7.275957614183426e-12), 'share_spain': np.float64(0.6830985915492956)}
+{'study': 'stock_scale', 'value': 2.0, 'cost_eur': np.float64(29669.71215141707), 'co2_kg': np.float64(12471.949446263234), 'eur_per_t': np.float64(208.94163486913428), 'gap_pct': 0.7241398238433162, 'unshipped_kg': np.float64(49.99999999999909), 'share_spain': np.float64(0.5304684748150756)}
+{'study': 'stock_scale', 'value': 3.0, 'cost_eur': np.float64(149265.232085876), 'co2_kg': np.float64(24556.225438163077), 'eur_per_t': np.float64(700.7757374923756), 'gap_pct': 1.5843680364376909, 'unshipped_kg': np.float64(29999.999999999978), 'share_spain': np.float64(0.4360655737704922)}
+{'study': 'circuity', 'value': 1.15, 'cost_eur': np.float64(10971.094585875677), 'co2_kg': np.float64(3678.389658807244), 'gap_pct': 3.7343293977857788}
+{'study': 'circuity', 'value': 1.25, 'cost_eur': np.float64(11538.170268295358), 'co2_kg': np.float64(4848.025061271136), 'gap_pct': 0.8140397039650042}
+{'study': 'circuity', 'value': 1.35, 'cost_eur': np.float64(12094.273889758973), 'co2_kg': np.float64(5235.8670661728265), 'gap_pct': 0.822201572157326}
+===== e3 =====
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds     lb
+     8      1     0      277         greedy 14103.1      True           0.0      0.0 8921.8
+     8      1     0      277           alns 10178.6      True           0.0     91.2 8921.8
+     8      1     0      277      two_phase  9188.6      True           0.0      2.6 8921.8
+     8      1     0      277 two_phase+alns  9188.6      True           0.0     63.0 8921.8
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+     8      1     1      276         greedy 26252.3      True           0.0      0.0 22587.7
+     8      1     1      276           alns 22610.5      True           0.0     90.1 22587.7
+     8      1     1      276      two_phase 22610.5      True           0.0      1.7 22587.7
+     8      1     1      276 two_phase+alns 22610.5      True           0.0     61.7 22587.7
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+     8      1     2      276         greedy 19927.4     False           0.0      0.0 19080.3
+     8      1     2      276           alns 19239.9      True           8.6     90.3 19080.3
+     8      1     2      276      two_phase 19239.9      True           8.6     53.7 19080.3
+     8      1     2      276 two_phase+alns 19239.9      True           8.6    114.0 19080.3
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds     lb
+    12      1     0      895         greedy 14680.5     False           0.0      0.0 8824.6
+    12      1     0      895           alns  9148.7      True          28.1     90.5 8824.6
+    12      1     0      895      two_phase  9175.5      True          28.1     13.6 8824.6
+    12      1     0      895 two_phase+alns  9175.5      True          28.1     74.0 8824.6

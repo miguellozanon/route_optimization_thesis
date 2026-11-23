@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Case study (one month, 71\,t). Costs in \euro{{}} recomputed by the independent evaluator; `reported' is what the legacy prototype displayed; gap is relative to the best lower bound (11,532\,\euro).}\label{tab:case}
+\begin{tabular}{lrrrrrrlrr}\toprule
+Method & Reported & Cost & Transport & Fees & CO$_2$ (t) & Trips & Feasible & Gap \% & s\\\midrule
+Legacy BC prototype, option 1 & 729 & 16,511 & 20,281 & -3,770 & 12.17 & 6 & no (5) & -- & 0.0\\
+Legacy BC prototype, option 2 & 16,707 & 25,822 & 15,122 & 10,700 & 8.96 & 6 & no (9) & -- & 0.0\\
+Greedy (corrected) & -- & 15,978 & 19,373 & -3,395 & 11.81 & 6 & yes & 27.83 & 0.0\\
+ALNS from greedy (120 s) & -- & 11,984 & 9,234 & 2,750 & 5.41 & 5 & yes & 3.78 & 19.6\\
+Two-phase MILP (certified) & -- & 11,538 & 8,533 & 3,005 & 4.85 & 6 & yes & 0.06 & 8.6\\
+Full MILP (600 s) & -- & 11,533 & 8,528 & 3,005 & 4.92 & 5 & yes & 0.01 & 540.7\\
+\bottomrule\end{tabular}\end{table}

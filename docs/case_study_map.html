@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>EOL battery dispatch - Madrid depot, one month</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+ html,body{margin:0;height:100%;font:14px/1.4 system-ui,sans-serif;color:#0b0b0b;background:#fcfcfb}
+ #map{position:absolute;top:0;bottom:0;left:340px;right:0}
+ #side{position:absolute;top:0;bottom:0;left:0;width:340px;overflow:auto;padding:16px;box-sizing:border-box;border-right:1px solid #e5e4e0}
+ h1{font-size:17px;margin:0 0 4px} .muted{color:#52514e;font-size:12px}
+ table{border-collapse:collapse;width:100%;font-size:12px;margin-top:10px}
+ td,th{padding:3px 4px;border-bottom:1px solid #eee;text-align:left} td.n{text-align:right;font-variant-numeric:tabular-nums}
+ .sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
+ .trip{cursor:pointer} .trip:hover{background:#f1f0ec}
+</style></head><body>
+<div id="side"><h1>EOL battery dispatch - Madrid depot, one month</h1><div class="muted">Two-phase MILP, certified gap 0.81% (9 s). Synthetic fees/capacities.</div>
+<table><tr><th>KPI</th><th class="n">value</th></tr><tr><td>Total cost</td><td class="n">&euro; 11,538</td></tr><tr><td>Transport</td><td class="n">&euro; 8,533</td></tr><tr><td>Gate fees</td><td class="n">&euro; 3,005</td></tr><tr><td>CO2</td><td class="n">4.85 t</td></tr><tr><td>Distance</td><td class="n">6,924 km</td></tr><tr><td>Trips</td><td class="n">6</td></tr><tr><td>Unshipped</td><td class="n">0 kg</td></tr><tr><td>Feasible</td><td class="n">yes</td></tr></table>
+<table><tr><th>#</th><th>vehicle</th><th>stops</th><th class="n">kg</th></tr><tr class="trip" data-i="0"><td>1</td><td><span class="sw" style="background:#1baf7a"></span>T40</td><td>SNAM_VIV</td><td class="n">11,250</td></tr><tr class="trip" data-i="1"><td>2</td><td><span class="sw" style="background:#1baf7a"></span>T40</td><td>SNAM_VIV</td><td class="n">11,250</td></tr><tr class="trip" data-i="2"><td>3</td><td><span class="sw" style="background:#2a78d6"></span>E19</td><td>MINURB</td><td class="n">4,800</td></tr><tr class="trip" data-i="3"><td>4</td><td><span class="sw" style="background:#1baf7a"></span>T40</td><td>RECYP</td><td class="n">22,655</td></tr><tr class="trip" data-i="4"><td>5</td><td><span class="sw" style="background:#1baf7a"></span>T40</td><td>RECYP &rarr; BEEPL</td><td class="n">16,045</td></tr><tr class="trip" data-i="5"><td>6</td><td><span class="sw" style="background:#eb6834"></span>R26</td><td>TERA &rarr; REFACT</td><td class="n">5,000</td></tr></table>
+<p class="muted">Straight segments between sites; costs use road distance = great-circle &times; circuity.
+Map data &copy; OpenStreetMap contributors.</p></div>
+<div id="map"></div>
+<script>
+const data = {"sites": [{"name": "Ecopilas storage (Madrid area, assumed)", "lat": 40.33, "lon": -3.71, "kind": "depot", "used": true, "info": "Storage depot<br>NMC: 18.0 t, LFP: 9.0 t, LIP: 7.5 t, NIMH: 4.0 t, NICD: 2.5 t, PB: 30.0 t"}, {"name": "SNAM Viviez", "lat": 44.556, "lon": 2.218, "kind": "recycling", "used": true, "info": "recycling &middot; FR<br>NMC: -0.25 &euro;/kg, LFP: +0.85 &euro;/kg, LIP: +0.55 &euro;/kg, NIMH: +0.35 &euro;/kg, NICD: +0.95 &euro;/kg"}, {"name": "SNAM Saint-Quentin-Fallavier", "lat": 45.64, "lon": 5.11, "kind": "recycling", "used": false, "info": "recycling &middot; FR<br>NMC: -0.30 &euro;/kg, LFP: +0.80 &euro;/kg, LIP: +0.50 &euro;/kg"}, {"name": "ACCUREC Krefeld", "lat": 51.334, "lon": 6.563, "kind": "recycling", "used": false, "info": "recycling &middot; DE<br>NMC: -0.45 &euro;/kg, LFP: +0.65 &euro;/kg, LIP: +0.45 &euro;/kg, NIMH: +0.25 &euro;/kg, NICD: +0.80 &euro;/kg"}, {"name": "ACCUREC Muelheim an der Ruhr", "lat": 51.427, "lon": 6.883, "kind": "recycling", "used": false, "info": "recycling &middot; DE<br>NIMH: +0.22 &euro;/kg, NICD: +0.75 &euro;/kg, LIP: +0.50 &euro;/kg"}, {"name": "Mineria Urbana (Segovia)", "lat": 40.948, "lon": -4.118, "kind": "recycling", "used": true, "info": "recycling &middot; ES<br>NMC: -0.05 &euro;/kg, LFP: +1.10 &euro;/kg, LIP: +0.70 &euro;/kg"}, {"name": "Recypilas (Bizkaia)", "lat": 43.3, "lon": -2.95, "kind": "recycling", "used": true, "info": "recycling &middot; ES<br>LIP: +0.75 &euro;/kg, NIMH: +0.45 &euro;/kg, NICD: +1.10 &euro;/kg, PB: -0.12 &euro;/kg"}, {"name": "Tera Batteries (Alicante)", "lat": 38.345, "lon": -0.481, "kind": "second-life", "used": true, "info": "second-life &middot; ES<br>NMC: +0.10 &euro;/kg, LFP: +0.20 &euro;/kg"}, {"name": "BeePlanet (Navarra)", "lat": 42.76, "lon": -1.64, "kind": "second-life", "used": true, "info": "second-life &middot; ES<br>NMC: +0.05 &euro;/kg, LFP: +0.15 &euro;/kg"}, {"name": "Renault Refactory (Sevilla)", "lat": 37.39, "lon": -5.98, "kind": "second-life", "used": true, "info": "second-life &middot; ES<br>NMC: +0.00 &euro;/kg, LFP: +0.30 &euro;/kg"}], "trips": [{"path": [[40.33, -3.71], [44.556, 2.218], [40.33, -3.71]], "color": "#1baf7a", "dash": null, "popup": "<b>Trip 1</b> &middot; Tractor + semitrailer 40 t<br>SNAM_VIV: LIP 3.15 t (7 cont.)<br>SNAM_VIV: NICD 0.90 t (2 cont.)<br>SNAM_VIV: NMC 7.20 t (12 cont.)"}, {"path": [[40.33, -3.71], [44.556, 2.218], [40.33, -3.71]], "color": "#1baf7a", "dash": null, "popup": "<b>Trip 2</b> &middot; Tractor + semitrailer 40 t<br>SNAM_VIV: LIP 3.15 t (7 cont.)<br>SNAM_VIV: NICD 0.90 t (2 cont.)<br>SNAM_VIV: NMC 7.20 t (12 cont.)"}, {"path": [[40.33, -3.71], [40.948, -4.118], [40.33, -3.71]], "color": "#2a78d6", "dash": "6 6", "popup": "<b>Trip 3</b> &middot; Battery-electric rigid 19 t<br>MINURB: LIP 1.20 t (3 cont.)<br>MINURB: NMC 3.60 t (6 cont.)"}, {"path": [[40.33, -3.71], [43.3, -2.95], [40.33, -3.71]], "color": "#1baf7a", "dash": null, "popup": "<b>Trip 4</b> &middot; Tractor + semitrailer 40 t<br>RECYP: NICD 0.70 t (2 cont.)<br>RECYP: NIMH 3.60 t (8 cont.)<br>RECYP: PB 18.35 t (21 cont.)"}, {"path": [[40.33, -3.71], [43.3, -2.95], [42.76, -1.64], [40.33, -3.71]], "color": "#1baf7a", "dash": null, "popup": "<b>Trip 5</b> &middot; Tractor + semitrailer 40 t<br>RECYP: NIMH 0.40 t (1 cont.)<br>RECYP: PB 11.64 t (13 cont.)<br>BEEPL: LFP 4.00 t (7 cont.)"}, {"path": [[40.33, -3.71], [38.345, -0.481], [37.39, -5.98], [40.33, -3.71]], "color": "#eb6834", "dash": null, "popup": "<b>Trip 6</b> &middot; Rigid 26 t<br>TERA: LFP 3.00 t (5 cont.)<br>REFACT: LFP 2.00 t (4 cont.)"}]};
+const map = L.map('map');
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {maxZoom: 18, attribution: '&copy; OpenStreetMap contributors'}).addTo(map);
+const bounds = [];
+data.sites.forEach(s => {
+  const m = L.circleMarker([s.lat, s.lon], {radius: s.kind==='depot'?9:7, color:'#fcfcfb', weight:2,
+     fillColor: s.kind==='depot' ? '#0b0b0b' : (s.used ? '#2a78d6' : '#a8a7a2'), fillOpacity: 1}).addTo(map);
+  m.bindPopup('<b>'+s.name+'</b><br>'+s.info);
+  bounds.push([s.lat, s.lon]);
+});
+const layers = [];
+data.trips.forEach((t, i) => {
+  const pl = L.polyline(t.path, {color: t.color, weight: 3, opacity: 0.85, dashArray: t.dash}).addTo(map);
+  pl.bindPopup(t.popup); layers.push(pl);
+});
+document.querySelectorAll('.trip').forEach(row => row.addEventListener('click', () => {
+  const pl = layers[+row.dataset.i]; map.fitBounds(pl.getBounds(), {padding:[40,40]}); pl.openPopup();
+}));
+map.fitBounds(bounds, {padding: [30, 30]});
+</script></body></html>

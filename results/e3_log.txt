@@ -1,0 +1,104 @@
+===== e3 =====
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds     lb
+     8      1     0      277         greedy 14103.1      True           0.0      0.0 8921.8
+     8      1     0      277           alns 10196.5      True           0.0     60.4 8921.8
+     8      1     0      277      two_phase  9188.6      True           0.0      2.5 8921.8
+     8      1     0      277 two_phase+alns  9188.6      True           0.0     49.1 8921.8
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+     8      1     1      276         greedy 26252.3      True           0.0      0.0 22587.7
+     8      1     1      276           alns 22610.5      True           0.0     60.0 22587.7
+     8      1     1      276      two_phase 22610.5      True           0.0      1.5 22587.7
+     8      1     1      276 two_phase+alns 22610.5      True           0.0     46.7 22587.7
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+     8      1     2      276         greedy 45659.3      True        8000.0      0.0 19080.3
+     8      1     2      276           alns 19239.9      True           8.6     60.3 19080.3
+     8      1     2      276      two_phase 19239.9      True           8.6     52.7 19080.3
+     8      1     2      276 two_phase+alns 19239.9      True           8.6     97.7 19080.3
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds     lb
+    12      1     0      895         greedy 38950.3      True        9904.5      0.0 8824.6
+    12      1     0      895           alns 10723.7      True           0.0     60.2 8824.6
+    12      1     0      895      two_phase  9175.5      True          28.1     13.7 8824.6
+    12      1     0      895 two_phase+alns  9175.5      True          28.1     59.2 8824.6
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+    12      1     1      895         greedy 25247.5      True           0.0      0.0 20220.9
+    12      1     1      895           alns 20223.3      True           0.0     60.0 20220.9
+    12      1     1      895      two_phase 20223.3      True           0.0      6.6 20220.9
+    12      1     1      895 two_phase+alns 20223.3      True           0.0     51.6 20220.9
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+    12      1     2      895         greedy 39122.9      True        5608.6      0.0 16299.5
+    12      1     2      895           alns 17077.0      True           0.0     60.1 16299.5
+    12      1     2      895      two_phase 16456.0      True           8.6     17.9 16299.5
+    12      1     2      895 two_phase+alns 16456.0      True           8.6     64.0 16299.5
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds     lb
+    16      1     0     2089         greedy 11889.2      True           0.0      0.0 8396.9
+    16      1     0     2089           alns  9175.5      True          28.1     60.0 8396.9
+    16      1     0     2089      two_phase  8707.2      True          28.1     15.5 8396.9
+    16      1     0     2089 two_phase+alns  8707.2      True          28.1     60.6 8396.9
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+    16      1     1     2089         greedy 20406.2      True           0.0      0.0 15564.1
+    16      1     1     2089           alns 15766.6      True           0.0     60.0 15564.1
+    16      1     1     2089      two_phase 15747.0      True          18.6      6.7 15564.1
+    16      1     1     2089 two_phase+alns 15747.0      True          18.6     51.7 15564.1
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+    16      1     2     2091         greedy 22927.4      True           0.0      0.0 13180.7
+    16      1     2     2091           alns 15198.5      True           0.0     60.1 13180.7
+    16      1     2     2091      two_phase 13385.4      True           8.6     37.7 13180.7
+    16      1     2     2091 two_phase+alns 13385.4      True           8.6     82.7 13180.7
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+    12      2     0     1793         greedy 32019.8      True         588.2      0.0 21623.8
+    12      2     0     1793           alns 27323.6      True           0.0     60.6 21623.8
+    12      2     0     1793      two_phase 23341.9      True          28.1    106.3 21623.8
+    12      2     0     1793 two_phase+alns 23341.4      True          28.1    152.2 21623.8
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+    12      2     1     1790         greedy 28070.1      True           0.0      0.0 24085.0
+    12      2     1     1790           alns 27863.8      True           0.0     60.0 24085.0
+    12      2     1     1790      two_phase 24272.8      True           0.0     46.5 24085.0
+    12      2     1     1790 two_phase+alns 24272.8      True           0.0     91.8 24085.0
+ n_fac  n_dep  seed  columns         method    cost  feasible  unshipped_kg  seconds      lb
+    12      2     2     1796         greedy 49979.5      True           0.0      0.0 40064.3
+    12      2     2     1796           alns 45907.1      True          55.1     60.1 40064.3
+    12      2     2     1796      two_phase 47824.5      True        2299.1     69.7 40064.3
+    12      2     2     1796 two_phase+alns 47823.0      True        2299.1    114.8 40064.3
+ n_fac  n_dep  seed  columns         method     cost  feasible  unshipped_kg  seconds      lb
+    20      2     0     8108         greedy  23474.4      True         588.2      0.0 14538.0
+    20      2     0     8108           alns  19444.0      True           0.0     61.0 14538.0
+    20      2     0     8108      two_phase 383365.7      True      127788.6    173.5 14538.0
+    20      2     0     8108 two_phase+alns  34593.5      True         476.4    218.5 14538.0
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method     cost  feasible  unshipped_kg  seconds      lb
+    20      2     1     8107         greedy  32094.1      True         484.7      0.0 21345.4
+    20      2     1     8107           alns  25077.8      True           0.0     60.6 21345.4
+    20      2     1     8107      two_phase 343446.8      True      114482.3    127.0 21345.4
+    20      2     1     8107 two_phase+alns  48144.0      True        7403.0    172.2 21345.4
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
+ n_fac  n_dep  seed  columns         method     cost  feasible  unshipped_kg  seconds      lb
+    20      2     2     8115         greedy  38941.4      True           0.0      0.0 24001.0
+    20      2     2     8115           alns  32066.2      True           0.0     60.4 24001.0
+    20      2     2     8115      two_phase 380480.1      True      126826.7    145.8 24001.0
+    20      2     2     8115 two_phase+alns  64874.7      True        8624.4    190.9 24001.0
